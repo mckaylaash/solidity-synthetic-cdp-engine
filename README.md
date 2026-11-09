@@ -1,6 +1,6 @@
 # Solidity Synthetic Asset & CDP Protocol
 
-A decentralized finance (DeFi) smart contract implementation in Solidity for managing **Collateralized Debt Positions (CDPs)** and minting synthetic assets (sAssets). This protocol enables users to lock stablecoin collateral (EUSD), maintain strict Minimum Collateral Ratios ({MCR), and mint, burn, or trade synthetic assets.
+A decentralized finance (DeFi) smart contract implementation in Solidity for managing **Collateralized Debt Positions (CDPs)** and minting synthetic assets ($\text{sAssets}$). This protocol enables users to lock stablecoin collateral ($\text{EUSD}$), maintain strict Minimum Collateral Ratios ($\text{MCR}$), and mint, burn, or trade synthetic assets.
 
 ## Architecture & Core Components
 
@@ -9,10 +9,10 @@ The protocol is built around two primary smart contracts:
 - **`IMint.sol`**: The interface defining standard external functions for position lifecycle management.
 
 ### State Variables
-* `_assetMap`: Mapping from sAsset token addresses to `Asset` structs (recording token metadata, price feeds, and MCR).
+* `_assetMap`: Mapping from sAsset token addresses to `Asset` structs (recording token metadata, price feeds, and $\text{MCR}$).
 * `_currentPositionIndex`: Incremental integer tracking total positions.
 * `_idxPositionMap`: Mapping from position index to `Position` structs (storing owner address, collateral balances, and minted asset details).
-* `_collateralToken`: Address of the accepted collateral token (EUSD).
+* `_collateralToken`: Address of the accepted collateral token ($\text{EUSD}$).
 
 ---
 
