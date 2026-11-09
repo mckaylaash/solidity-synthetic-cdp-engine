@@ -1,0 +1,4 @@
+node_modules/
+build/
+ganache-log.txt
+.DS_Store
